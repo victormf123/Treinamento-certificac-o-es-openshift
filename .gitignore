@@ -1,3 +1,4 @@
-arquivos/**
+arquivos/Dados-openshift.txt
+arquivos/jboss-eap-6.4
 envs.sh
 *.pptx
