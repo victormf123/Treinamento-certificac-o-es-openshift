@@ -30,7 +30,9 @@ WORKDIR /opt/rh
 
 # install JBoss EAP 6.4.0
 COPY ./jboss-eap-6.4.0.zip /opt/rh/
-RUN unzip jboss-eap-6.4.0.zip
+RUN pwd
+RUN ls -la 
+RUN unzip /opt/rh/jboss-eap-6.4.0.zip
 
 # set environment
 ENV JBOSS_HOME=/opt/rh/jboss-eap-6.4 
