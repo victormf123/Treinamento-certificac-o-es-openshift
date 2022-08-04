@@ -1,0 +1,20 @@
+Crie um projeto no openshift com seu nome
+
+Utilizar o template do exercício rails-postgresql.json
+- arrumar o template
+-> arrumar o nome do template, deve ter o nome rails-postgresql-exercicio
+-> arrumar o parâmetro NAME do template, requerido deve ser true sem valor padrão, arrume as referências a este parâmetro,
+   tudo depende desta informação, está como *** no template
+-> arrumar o parâmetro namespace, requerido deve ser true e ter valor padrão 
+-> arrumar o repository do git, deve ser https://github.com/sclorg/rails-ex.git
+-> incluir o novo parâmetro
+ - name: HELLO_AUDIENCE
+   value: MENSAGEM TESTE
+->Nas partes de images stream alterar a versão do Postegres e do Ruby, no tamplate está errado
+ - Verificar no openshift se há as versões mínimas abaixo, utilize o sugerido ou versão superior
+     - Postegres: 10
+     - Ruby : 2.5
+- importar os imagestreams
+- importar o teplate para o projeto
+- criar um aplicativo utilizando este template
+- Exportar o template colocado no openshift para um arquivo no formato yaml

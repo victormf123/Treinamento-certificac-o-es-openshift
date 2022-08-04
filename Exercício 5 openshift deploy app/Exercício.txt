@@ -1,0 +1,16 @@
+
+Crie um projeto no openshift com seu nome
+
+
+Parte 1
+Nesta etapa você irá executar estes passos:
+Publique o exemplo https://github.com/casaroto/nodejs-ex  via oc new-app
+Exponha o serviço para acesso fora do cluster
+Verifique que a rota funcionou via browser
+
+
+Parte 2
+Suba um banco de dados mongo DB, você pode utilizar o wizard na visualização developer ou via oc new-app
+Pegue os dados de conexão ao banco mongo DB
+Coloque os dados de conexão como Environment ENV do deployment do projeto node js publicado anteriormente
+Verifique que a rota funcionou via browser e exibiu a conexão valida ao banco de dados

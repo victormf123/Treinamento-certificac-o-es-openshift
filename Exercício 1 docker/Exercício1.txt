@@ -1,0 +1,28 @@
+
+O pacote java-1.8.0-openjdk-devel deve ser instalado durante o build
+
+Copiar para o container e descompactar o arquivo do jboss, jboss-eap-6.4.0.zip
+
+O jboss ficará no diretório ENV /opt/rh/jboss-eap-6.4 
+
+Criar varivável de ambiente  JBOSS_HOME com o caminho do jboss
+
+Chame o comando add-user.sh  que está dentro do diretório bin do jboss, utilize a variável de ambiente JBOSS_HOME
+para localizar o executável, e na chamada do comando utilize o exemplo add-user.sh admin admin@2016 --silent 
+Os parâmetros do exemplo são o usuário e senha do admin mas um parâmetro para silenciar o comando
+
+Complemente as configurações do arquivo standalone.conf incluíndo o parâmetro -Djboss.bind.address.management=0.0.0.0
+
+Exponha também no container as portas 9990 9999, para poder visualizar a interface administrativa
+
+Faça o deploy do aplicativo sample.war colocando no diretório standalone/deployments/ 
+Utilize a varivável JBOSS_HOME como diretório base 
+
+Faça o build do container
+
+Execute o container mapeando no comando run todas portas do container para portas da máquina local
+
+Abra no browser a interface administrativa - porta 9990 - logue com a senha admin@2016 e usuário admin http://localhost:9990/console/index.html
+
+Abra no browser o aplicativo deployado - 8080   http://localhost:8080/sample/
+

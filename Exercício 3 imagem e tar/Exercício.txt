@@ -1,0 +1,8 @@
+
+Faça o tagueamento da imagem para jboss-container-sample:latest
+
+Salve a imagem do container em uma conta sua no dockerhub.com
+
+Exporte a imagem do container localmente como tar
+
+

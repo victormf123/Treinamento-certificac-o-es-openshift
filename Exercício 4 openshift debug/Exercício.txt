@@ -1,0 +1,20 @@
+
+Crie um projeto no openshift com seu nome
+
+Publique algum aplicativo seu com container no openshift, ou utilize este git https://github.com/casaroto/nodejs-ex
+Este projeto exemplo do git consegue ser publicado facilmente com o wizard na visualização developer ou via oc new-app
+
+
+Crie um script que faças estes passos:
+Escreva "Teste script openshift" no console
+Mostre o diretório atual
+Liste com parâmetro -la o diretório /etc
+Exiba a hora atual do container
+
+Copie este script para dentro de um container rodando em openjdk
+
+Crie uma chamada na sua máquina com oc exec que execute este script dentro do container no openshift. Esta chamada deve ser executada em uma só linha de comando.
+
+
+
+

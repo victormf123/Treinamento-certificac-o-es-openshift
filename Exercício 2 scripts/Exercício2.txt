@@ -1,0 +1,13 @@
+
+Crie um script que rode o container mapeando no comando run todas portas do container para portas da máquina local
+
+Crie um script que execute os passos abaixo:
+Leia 5 linhas do log do container
+Rode um comando ls -la de dentro do container listando o conteúdo do diretório do jboss
+
+Crie um script que execute os passos abaixo:
+Stop o container
+Remova o container local 
+Remova a imagem do container
+
+
